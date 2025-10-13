@@ -20,7 +20,6 @@ interface Document {
 
 export function DocumentsPage() {
   const [searchTerm, setSearchTerm] = useState("")
-  const [filterType, setFilterType] = useState("PDF Files")
   const [isUploadModalOpen, setIsUploadModalOpen] = useState(false)
   const [uploadForm, setUploadForm] = useState({
     petName: "",
