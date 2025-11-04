@@ -38,6 +38,26 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+
+      screens: {
+
+      'xsm':'360px',
+
+      'ssm':'480px',
+      
+      'sm': '640px',
+      
+      'md': '768px',
+      "mdd":'930px',
+      
+
+      'lg': '1024px',
+
+      'xl': '1280px',
+    
+      '2xl': '1536px',
+      
+    },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

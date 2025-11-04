@@ -88,15 +88,16 @@ export function AvailabilityPage() {
   }
 
   return (
-    <div className="p-6">
+    <div className="p-4 md:p-6 ">
       <div className="max-w-7xl mx-auto space-y-6">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+       <div className="flex flex-col ssm:flex-row items-center ssm:justify-between justify-start mb-8">
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-2">Availability</h2>
             <p className="text-gray-600 text-lg">Manage your schedule and time slots</p>
           </div>
-          <div className="flex items-center gap-3">
+
+          <div className="flex items-center gap-3 w-full ssm:w-auto mt-4 ssm:mt-0 ssm:justify-end justify-start">
             <span className="text-gray-700 font-medium">Available</span>
             <button
               onClick={() => setIsAvailable(!isAvailable)}
@@ -111,7 +112,8 @@ export function AvailabilityPage() {
               />
             </button>
           </div>
-        </div>
+       </div>
+
 
         {/* Statistics Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">

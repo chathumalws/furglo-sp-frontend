@@ -132,7 +132,7 @@ export function BillingPage() {
     <div className="p-6">
       <div className="max-w-7xl mx-auto space-y-6">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col ssm:flex-row items-center ssm:justify-between justify-start mb-8">
           <div>
             <h1 className="text-3xl font-bold text-gray-800">Billing & Payments</h1>
             <p className="text-gray-600 mt-1">Manage invoices, payment and billing setting</p>
@@ -198,7 +198,7 @@ export function BillingPage() {
 
         {/* Tab Content */}
         {activeTab === "invoices" ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 mdd:grid-cols-2 xl:grid-cols-3 gap-6">
             {invoices.map((invoice) => (
               <Card key={invoice.id} className="bg-white border border-gray-200">
                 <CardContent className="p-6">
@@ -250,12 +250,15 @@ export function BillingPage() {
                     </div>
                   </div>
 
-                  <div className="flex gap-2 mt-4">
-                    <Button size="sm" variant="outline" className="flex-1 bg-transparent">
-                      <Download className="w-4 h-4 mr-1" />
-                      PDF
-                    </Button>
-                    <Button size="sm" className="flex-1 bg-teal-500 text-white hover:bg-teal-600">
+                  <div className="flex flex-col ssm:flex-row gap-2 mt-4 justify-between">
+                    <div>
+                        <Button size="sm" variant="outline" className="flex-1 bg-transparent">
+                          <Download className="w-4 h-4 mr-1" />
+                            PDF
+                       </Button>
+                    </div>
+                    <div className="flex flex-row gap-2">
+                      <Button size="sm" className="flex-1 bg-teal-500 text-white hover:bg-teal-600">
                       <Mail className="w-4 h-4 mr-1" />
                       Email
                     </Button>
@@ -268,6 +271,10 @@ export function BillingPage() {
                         Mark Paid
                       </Button>
                     )}
+
+                    </div>
+                   
+                    
                   </div>
                 </CardContent>
               </Card>

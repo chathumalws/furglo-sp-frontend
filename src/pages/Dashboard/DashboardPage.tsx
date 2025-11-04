@@ -8,7 +8,7 @@ import { Badge } from "../../components/ui/badge"
 export default function DashboardPage() {
   return (
     <div>
-      <main className="flex-1 p-6 overflow-auto bg-[#FFEADB80]">
+      <main className="flex-1 p-6 overflow-auto ">
           <div className="max-w-7xl mx-auto space-y-6 ">
             {/* Welcome Section */}
             <div className="mb-8">

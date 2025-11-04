@@ -129,7 +129,7 @@ export function ServicesPage() {
     <div className="p-6">
       <div className="max-w-7xl mx-auto space-y-6">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex flex-col ssm:flex-row items-center ssm:justify-between justify-start mb-8">
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-2">My Service</h2>
             <p className="text-gray-600 text-lg">Manage your pet care services and pricing</p>
