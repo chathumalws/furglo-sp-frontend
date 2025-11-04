@@ -134,7 +134,7 @@ export function ServicesPage() {
             <h2 className="text-3xl font-bold text-gray-800 mb-2">My Service</h2>
             <p className="text-gray-600 text-lg">Manage your pet care services and pricing</p>
           </div>
-          <Button className="bg-orange-600 text-white hover:bg-orange-700" onClick={() => setIsModalOpen(true)}>
+          <Button className="bg-orange-600 text-white hover:bg-orange-700 w-full md:w-auto" onClick={() => setIsModalOpen(true)}>
             <Plus className="w-4 h-4 mr-2" />
             Add New Service
           </Button>

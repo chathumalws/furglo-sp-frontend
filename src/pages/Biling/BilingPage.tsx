@@ -137,7 +137,7 @@ export function BillingPage() {
             <h1 className="text-3xl font-bold text-gray-800">Billing & Payments</h1>
             <p className="text-gray-600 mt-1">Manage invoices, payment and billing setting</p>
           </div>
-          <Button onClick={() => navigate('/billing/invoice')} className="bg-orange-600 text-white hover:bg-orange-700">
+          <Button onClick={() => navigate('/billing/invoice')} className="bg-orange-600 text-white hover:bg-orange-700 w-full md:w-auto">
             <FileText className="w-4 h-4 mr-2" />
             Create Invoice
           </Button>
