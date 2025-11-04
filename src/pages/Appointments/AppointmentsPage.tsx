@@ -71,7 +71,7 @@ export default function AppointmentsPage() {
 
   return (
     <div className="p-4 md:p-6">
-      <div className="max-w-6xl mx-auto space-y-6">
+      <div className="max-w-7xl mx-auto space-y-6">
         {/* Header */}
         <div>
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Appointments</h1>
