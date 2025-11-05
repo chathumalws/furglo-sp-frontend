@@ -209,7 +209,7 @@ export function AvailabilityPage() {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between text-sm">
+                <div className="flex flex-col ssm:flex-row items-start ssm:items-center justify-between text-sm">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                     <span>Available</span>
@@ -262,11 +262,11 @@ export function AvailabilityPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div>
+                  <div className="w-3/4 ssm:w-[80%]">
                     <p className="font-medium text-gray-800">Auto Block When Booked</p>
                     <p className="text-sm text-gray-600">Automatically mark time slots as unavailable when booked</p>
                   </div>
-                  <button
+                  <div className="w-1/4 ssm:w-[20%]"><button
                     onClick={() => setAutoBlock(!autoBlock)}
                     className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                       autoBlock ? "bg-orange-400" : "bg-gray-300"
@@ -277,15 +277,16 @@ export function AvailabilityPage() {
                         autoBlock ? "translate-x-6" : "translate-x-1"
                       }`}
                     />
-                  </button>
+                  </button></div>
+                  
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <div>
+                  <div className="w-3/4 ssm:w-[80%]">
                     <p className="font-medium text-gray-800">Allow Urgent Booking</p>
                     <p className="text-sm text-gray-600">Accept emergency bookings outside regular hours</p>
                   </div>
-                  <button
+                  <div className="w-1/4 ssm:w-[20%]"> <button
                     onClick={() => setAllowUrgent(!allowUrgent)}
                     className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                       allowUrgent ? "bg-orange-400" : "bg-gray-300"
@@ -296,7 +297,8 @@ export function AvailabilityPage() {
                         allowUrgent ? "translate-x-6" : "translate-x-1"
                       }`}
                     />
-                  </button>
+                  </button></div>
+                 
                 </div>
 
                 <div className="bg-teal-50 p-4 rounded-lg">

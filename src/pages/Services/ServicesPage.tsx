@@ -174,7 +174,7 @@ export function ServicesPage() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 mdd:grid-cols-2 xl:grid-cols-3 gap-6">
           {services.map((service) => (
             <ServiceCard
               key={service.id}
@@ -310,8 +310,8 @@ function ServiceCard({
 
           {/* Emergency Toggle and Edit Button */}
           <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-            <div className="flex items-center gap-2">
-              <button
+            <div className="flex flex-col ssm:flex-row items-start ssm:items-center  gap-2">
+              <div className="items-center justify-center"> <button
                 onClick={onToggleEmergency}
                 className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                   service.emergencyAvailable ? "bg-teal-500" : "bg-gray-200"
@@ -322,8 +322,11 @@ function ServiceCard({
                     service.emergencyAvailable ? "translate-x-6" : "translate-x-1"
                   }`}
                 />
-              </button>
-              <span className="text-xs text-gray-600">Emergency Available</span>
+              </button></div>
+
+              <div> <span className="text-xs text-gray-600">Emergency Available</span></div>
+             
+             
             </div>
             <Button size="sm" className="bg-orange-600 text-white hover:bg-orange-700">
               Edit Service
