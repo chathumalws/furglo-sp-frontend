@@ -390,12 +390,14 @@ export function SettingsPage() {
                 </div>
 
                 <div className="space-y-6">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col ssm:flex-row items-start ssm:items-center space-y-2 justify-between">
+
                     <div>
                       <h3 className="font-medium text-gray-800">Profile Visibility</h3>
                       <p className="text-sm text-gray-600">Allow clients to view profile</p>
                     </div>
-                    <button
+                    <div>
+                       <button
                       onClick={() => setProfileVisibility(!profileVisibility)}
                       className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                         profileVisibility ? "bg-orange-500" : "bg-gray-300"
@@ -407,14 +409,17 @@ export function SettingsPage() {
                         }`}
                       />
                     </button>
+
+                    </div>
+                   
                   </div>
 
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col ssm:flex-row items-start ssm:items-center space-y-2 justify-between">
                     <div>
                       <h3 className="font-medium text-gray-800">Show Contact Information</h3>
                       <p className="text-sm text-gray-600">Display your contact details to client</p>
                     </div>
-                    <button
+                    <div> <button
                       onClick={() => setShowContactInfo(!showContactInfo)}
                       className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                         showContactInfo ? "bg-orange-500" : "bg-gray-300"
@@ -425,15 +430,16 @@ export function SettingsPage() {
                           showContactInfo ? "translate-x-6" : "translate-x-1"
                         }`}
                       />
-                    </button>
+                    </button></div>
+                   
                   </div>
 
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col ssm:flex-row items-start ssm:items-center space-y-2 justify-between">
                     <div>
                       <h3 className="font-medium text-gray-800">Online Status</h3>
                       <p className="text-sm text-gray-600">Show when you're online</p>
                     </div>
-                    <button
+                    <div> <button
                       onClick={() => setOnlineStatus(!onlineStatus)}
                       className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                         onlineStatus ? "bg-orange-500" : "bg-gray-300"
@@ -444,15 +450,16 @@ export function SettingsPage() {
                           onlineStatus ? "translate-x-6" : "translate-x-1"
                         }`}
                       />
-                    </button>
+                    </button></div>
+                   
                   </div>
 
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col ssm:flex-row items-start ssm:items-center space-y-2 justify-between">
                     <div>
                       <h3 className="font-medium text-gray-800">Data Analytics</h3>
                       <p className="text-sm text-gray-600">Allow usage data collection for improvements</p>
                     </div>
-                    <button
+                    <div><button
                       onClick={() => setDataAnalytics(!dataAnalytics)}
                       className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                         dataAnalytics ? "bg-orange-500" : "bg-gray-300"
@@ -463,7 +470,8 @@ export function SettingsPage() {
                           dataAnalytics ? "translate-x-6" : "translate-x-1"
                         }`}
                       />
-                    </button>
+                    </button></div>
+                    
                   </div>
 
                   <Button onClick={handlePrivacyUpdate} className="w-full bg-orange-500 hover:bg-orange-600 text-white">
